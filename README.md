@@ -12,7 +12,7 @@ Mobs that are untied naturally float to the surface, but leashed mobs remain at 
 
 - When a leashed mob takes drowning damage:
   - The leash is dropped as an item, freeing the mob
-  - The mob receives *Water Breathing* for 5 seconds to safely resurface  
+  - The mob receives *Water Breathing* for 10 seconds to safely resurface  
 
 ---
 

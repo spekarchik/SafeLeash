@@ -16,7 +16,7 @@ public class LivingEntityEvents implements IEventHandler
             if (mob.isLeashed())
             {
                 mob.dropLeash();
-                mob.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 100));
+                mob.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 200));
             }
         }
     }

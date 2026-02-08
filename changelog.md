@@ -3,4 +3,4 @@
 - Initial release
 - When a leashed mob takes drowning damage:
   - The leash is dropped
-  - The mob receives *Water Breathing* for 5 seconds
+  - The mob receives *Water Breathing* for 10 seconds
