@@ -14,6 +14,8 @@ Mobs that are untied naturally float to the surface, but leashed mobs remain at 
   - The leash is dropped as an item, freeing the mob
   - The mob receives *Water Breathing* for 10 seconds to safely resurface  
 
+This can be understood as the mob panicking, breaking free, and instinctively holding its breath long enough to reach the surface.
+
 ---
 
 ## ✅ Features
