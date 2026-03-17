@@ -36,8 +36,7 @@ This can be understood as the mob panicking, breaking free, and instinctively ho
 - Launch the game and enjoy your adventure!
 
 ## Technical Details
-- **Developer:** Sergey Pekarchik
-- **Supported NeoForge versions:** 1.21.6+
+- **Supported Minecraft versions:** 1.21.6+
 
 ---
 
