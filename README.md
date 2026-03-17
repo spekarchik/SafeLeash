@@ -34,8 +34,7 @@ Mobs that are untied naturally float to the surface, but leashed mobs remain at 
 - Launch the game and enjoy your adventure!
 
 ## Technical Details
-- **Developer:** Sergey Pekarchik
-- **Supported NeoForge versions:** 1.21.6+
+- **Supported Minecraft versions:** 1.21.6+
 
 ---
 
