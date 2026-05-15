@@ -27,7 +27,7 @@ displayName="${mod_name}" #mandatory
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 
 # A URL for the "homepage" for this mod, displayed in the mod UI
-displayURL="https://modrinth.com/user/spekarchik" #optional
+displayURL="${home_page}" #optional
 
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="logo.png" #optional
@@ -36,13 +36,10 @@ logoFile="logo.png" #optional
 #credits="" #optional
 
 # The authors of the mod, displayed in the mod UI (optional)
-authors="Sergey Pekarchik"
+authors="${mod_authors}"
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''
-Safe Leash ensures that tamed animals and pets stay safe from drowning when attached to a leash.
-Big or small, your companions are protected, making water travel and exploration worry-free.
-'''
+description='''${mod_description}'''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
 #[[mixins]]

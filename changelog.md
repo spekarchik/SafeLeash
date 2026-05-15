@@ -1,3 +1,9 @@
+## 📦 Version 1.0.1
+
+- Changed the Home page URL in the mod metadata.
+- No gameplay changes.
+
+
 ## 📦 Version 1.0.0
 
 - Initial release
