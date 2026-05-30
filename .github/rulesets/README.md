@@ -18,24 +18,24 @@ You can create rulesets directly from these JSON files:
 Run from repository root:
 
 ```bash
-OWNER_REPO="<owner>/<repo>" # e.g. myorg/myrepo
+GITHUB_REPO="<owner>/<repo>" # e.g. myorg/myrepo
 
 gh api \
   --method POST \
   -H "Accept: application/vnd.github+json" \
-  /repos/$OWNER_REPO/rulesets \
+  /repos/$GITHUB_REPO/rulesets \
   --input .github/rulesets/main-protected.ruleset.json
 
 gh api \
   --method POST \
   -H "Accept: application/vnd.github+json" \
-  /repos/$OWNER_REPO/rulesets \
+  /repos/$GITHUB_REPO/rulesets \
   --input .github/rulesets/production-protected.ruleset.json
 
 gh api \
   --method POST \
   -H "Accept: application/vnd.github+json" \
-  /repos/$OWNER_REPO/rulesets \
+  /repos/$GITHUB_REPO/rulesets \
   --input .github/rulesets/agent-pr-branches.ruleset.json
 ```
 
