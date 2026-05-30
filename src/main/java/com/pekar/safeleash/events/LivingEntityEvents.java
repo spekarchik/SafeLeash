@@ -19,7 +19,7 @@ public final class LivingEntityEvents
             {
                 mob.dropLeash();
                 mob.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 200));
-                return false;
+                return true;
             }
 
             return true;
