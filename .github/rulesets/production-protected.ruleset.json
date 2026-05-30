@@ -35,7 +35,7 @@
         "strict_required_status_checks_policy": true,
         "required_status_checks": [
           {
-            "context": "Build NeoForge Mod"
+            "context": "REPLACE_WITH_PRODUCTION_REQUIRED_CHECK"
           }
         ]
       }
