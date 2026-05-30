@@ -1,7 +1,7 @@
 # GitHub Agent Branch & Push Rules
 
 Import-ready JSON files for automatic ruleset creation are in:
-- `/tmp/workspace/spekarchik/SafeLeash/.github/rulesets/`
+- `.github/rulesets/`
 
 This repository should use three separate branch rulesets:
 

@@ -2,9 +2,9 @@
 
 You can create rulesets directly from these JSON files:
 
-- `/tmp/workspace/spekarchik/SafeLeash/.github/rulesets/main-protected.ruleset.json`
-- `/tmp/workspace/spekarchik/SafeLeash/.github/rulesets/production-protected.ruleset.json`
-- `/tmp/workspace/spekarchik/SafeLeash/.github/rulesets/agent-pr-branches.ruleset.json`
+- `.github/rulesets/main-protected.ruleset.json`
+- `.github/rulesets/production-protected.ruleset.json`
+- `.github/rulesets/agent-pr-branches.ruleset.json`
 
 ## Import with GitHub CLI
 
