@@ -80,3 +80,8 @@ If you enjoy the mod and would like to support future updates and new features, 
 Your support means a lot and helps me dedicate more time to creating new content and improving the mod! ❤️
 
 ---
+
+## 🤖 Repository Automation
+
+Rules for GitHub Agents branch creation and push access are documented in:
+`/tmp/workspace/spekarchik/SafeLeash/.github/agent-branch-rules.md`
