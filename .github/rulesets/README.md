@@ -41,5 +41,5 @@ gh api \
 
 ## Notes
 
-- `agent-pr-branches.ruleset.json` includes `actor_id: 15368` for `github-actions[bot]` integration bypass.
-- Add your GitHub Agent app integration as an extra `bypass_actors` entry if needed.
+- `agent-pr-branches.ruleset.json` intentionally ships with an empty `bypass_actors` list to keep import portable.
+- If you need bypass actors, add them after import (or before import) using valid IDs for your own repository/organization integrations.
