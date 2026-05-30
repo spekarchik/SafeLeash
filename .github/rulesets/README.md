@@ -11,7 +11,7 @@ You can create rulesets directly from these JSON files:
 Run from repository root:
 
 ```bash
-OWNER_REPO="spekarchik/SafeLeash" # change if applying to another repository
+OWNER_REPO="<owner>/<repo>" # e.g. spekarchik/SafeLeash
 
 gh api \
   --method POST \
