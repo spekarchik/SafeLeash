@@ -1,0 +1,30 @@
+{
+  "name": "Agent PR branches",
+  "target": "branch",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "include": [
+        "refs/heads/agent/pr/*",
+        "refs/heads/copilot/pr/*",
+        "refs/heads/pr/*"
+      ],
+      "exclude": []
+    }
+  },
+  "rules": [
+    {
+      "type": "deletion"
+    },
+    {
+      "type": "non_fast_forward"
+    }
+  ],
+  "bypass_actors": [
+    {
+      "actor_type": "Integration",
+      "actor_id": 15368,
+      "bypass_mode": "always"
+    }
+  ]
+}
