@@ -1,23 +1,28 @@
 package com.pekar.safeleash.events;
 
+import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Mob;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 
-public class LivingEntityEvents implements IEventHandler
+public final class LivingEntityEvents
 {
-    @SubscribeEvent
-    public void onLivingDamage(LivingDamageEvent.Pre event)
+    private LivingEntityEvents()
     {
-        if (event.getEntity() instanceof Mob mob && event.getSource() == mob.damageSources().drown())
-        {
-            if (mob.isLeashed())
+    }
+
+    public static void register()
+    {
+        ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) -> {
+            if (entity instanceof Mob mob && mob.isLeashed() && source.is(DamageTypes.DROWN))
             {
                 mob.dropLeash();
                 mob.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 200));
+                return false;
             }
-        }
+
+            return true;
+        });
     }
 }

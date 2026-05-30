@@ -2,35 +2,19 @@ package com.pekar.safeleash;
 
 import com.mojang.logging.LogUtils;
 import com.pekar.safeleash.events.EventRegistry;
-import net.neoforged.bus.api.IEventBus;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.ModContainer;
-import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(Main.MODID)
-public class Main
+public class Main implements ModInitializer
 {
-    // Define mod id in a common place for everything to reference
     public static final String MODID = "safeleash";
-    // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public Main(IEventBus modEventBus, ModContainer modContainer)
+    @Override
+    public void onInitialize()
     {
-        NeoForge.EVENT_BUS.register(this);
         EventRegistry.registerEvents();
-    }
-
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event)
-    {
-        // Do something when the server starts
-//        LOGGER.info("HELLO from server starting");
+        ServerLifecycleEvents.SERVER_STARTING.register(server -> LOGGER.debug("Initializing {}", MODID));
     }
 }
