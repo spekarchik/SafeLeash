@@ -8,10 +8,17 @@ You can create rulesets directly from these JSON files:
 
 ## Import with GitHub CLI
 
+> [!IMPORTANT]
+> Before import, replace these placeholders in JSON files:
+> - `REPLACE_WITH_MAIN_REQUIRED_CHECK`
+> - `REPLACE_WITH_PRODUCTION_REQUIRED_CHECK`
+>
+> If you import without replacing them, merges will be blocked by non-existent check names.
+
 Run from repository root:
 
 ```bash
-OWNER_REPO="<owner>/<repo>" # e.g. spekarchik/SafeLeash
+OWNER_REPO="<owner>/<repo>" # e.g. myorg/myrepo
 
 gh api \
   --method POST \
@@ -36,4 +43,3 @@ gh api \
 
 - `agent-pr-branches.ruleset.json` includes `actor_id: 15368` for `github-actions[bot]` integration bypass.
 - Add your GitHub Agent app integration as an extra `bypass_actors` entry if needed.
-- Replace `REPLACE_WITH_MAIN_REQUIRED_CHECK` and `REPLACE_WITH_PRODUCTION_REQUIRED_CHECK` with your real check context names before import.
