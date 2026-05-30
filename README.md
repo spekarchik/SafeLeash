@@ -84,4 +84,4 @@ Your support means a lot and helps me dedicate more time to creating new content
 ## 🤖 Repository Automation
 
 Rules for GitHub Agents branch creation and push access are documented in:
-`/tmp/workspace/spekarchik/SafeLeash/.github/agent-branch-rules.md`
+`.github/agent-branch-rules.md`
