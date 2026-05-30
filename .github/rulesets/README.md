@@ -11,22 +11,24 @@ You can create rulesets directly from these JSON files:
 Run from repository root:
 
 ```bash
+OWNER_REPO="spekarchik/SafeLeash" # change if applying to another repository
+
 gh api \
   --method POST \
   -H "Accept: application/vnd.github+json" \
-  /repos/spekarchik/SafeLeash/rulesets \
+  /repos/$OWNER_REPO/rulesets \
   --input .github/rulesets/main-protected.ruleset.json
 
 gh api \
   --method POST \
   -H "Accept: application/vnd.github+json" \
-  /repos/spekarchik/SafeLeash/rulesets \
+  /repos/$OWNER_REPO/rulesets \
   --input .github/rulesets/production-protected.ruleset.json
 
 gh api \
   --method POST \
   -H "Accept: application/vnd.github+json" \
-  /repos/spekarchik/SafeLeash/rulesets \
+  /repos/$OWNER_REPO/rulesets \
   --input .github/rulesets/agent-pr-branches.ruleset.json
 ```
 
