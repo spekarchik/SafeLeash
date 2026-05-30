@@ -1,6 +1,7 @@
 plugins {
-    id 'net.fabricmc.fabric-loom' version "${loom_version}"
+    id 'java-library'
     id 'maven-publish'
+    id 'net.fabricmc.fabric-loom' version "${loom_version}"
     id 'idea'
 }
 
@@ -11,16 +12,22 @@ tasks.named('wrapper', Wrapper).configure {
 version = mod_version
 group = mod_group_id
 
-repositories {
-}
-
 base {
     archivesName = mod_id
 }
 
-loom {
-    splitEnvironmentSourceSets()
+sourceSets.main.resources {
+    srcDir('src/generated/resources')
 
+    exclude("**/*.bbmodel")
+    exclude("src/generated/**/.cache")
+}
+
+repositories {
+    // Loom adds the core Minecraft/Fabric repositories automatically.
+}
+
+loom {
     mods {
         "${mod_id}" {
             sourceSet sourceSets.main
@@ -53,6 +60,24 @@ processResources {
     }
 }
 
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+    withSourcesJar()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 25
+}
+
+jar {
+    from("license.md") {
+        rename { "${it}_${project.base.archivesName.get()}" }
+    }
+}
+
 publishing {
     publications {
         register('mavenJava', MavenPublication) {
@@ -63,22 +88,6 @@ publishing {
         maven {
             url "file://${project.projectDir}/repo"
         }
-    }
-}
-
-tasks.withType(JavaCompile).configureEach {
-    options.encoding = 'UTF-8'
-    options.release = 25
-}
-
-java {
-    toolchain.languageVersion = JavaLanguageVersion.of(25)
-    withSourcesJar()
-}
-
-jar {
-    from("LICENSE") {
-        rename { "${it}_${project.name}" }
     }
 }
 
