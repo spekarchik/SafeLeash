@@ -4,7 +4,7 @@ Leashed mobs can be vulnerable in ways many players don’t expect.
 If a mob is pulled underwater — by a boat, a player, another mob, or currents — it can drown while still tethered.  
 Mobs that are untied naturally float to the surface, but leashed mobs remain at risk.
 
-*Safe Leash* is a lightweight Fabric mod for Minecraft 26.1.x that makes leash behavior safer and more predictable.
+*Safe Leash* is a lightweight Fabric mod for Minecraft 1.21.11 that makes leash behavior safer and more predictable.
 
 ---
 
@@ -20,7 +20,7 @@ This can be understood as the mob panicking, breaking free, and instinctively ho
 
 ## ✅ Features
 
-- 🧠 **Fabric-friendly** – designed for Minecraft 26.1.x  
+- 🧠 **Fabric-friendly** – designed for Minecraft 1.21.11  
 - 🎮 **Client/server compatible** – works in singleplayer and multiplayer  
 - 🔗 **Improved leash mechanics** – prevents accidental mob drowning, regardless of what pulls the mob underwater  
 - 🎨 **Lightweight & focused** – solves leash-related risks without unnecessary changes  
@@ -30,13 +30,13 @@ This can be understood as the mob panicking, breaking free, and instinctively ho
 # 🛠️ Installation and Technical Information
 
 ## Installation
-- Make sure you have **Minecraft 26.1.x** with **Fabric Loader** installed.
+- Make sure you have **Minecraft 1.21.11** with **Fabric Loader** installed.
 - Download the mod `.jar` file.
 - Place it into your `mods` folder.
 - Launch the game and enjoy your adventure!
 
 ## Technical Details
-- **Supported Minecraft versions:** 26.1.x
+- **Supported Minecraft versions:** 1.21.6–1.21.11
 
 ---
 
