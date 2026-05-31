@@ -36,7 +36,7 @@ This can be understood as the mob panicking, breaking free, and instinctively ho
 - Launch the game and enjoy your adventure!
 
 ## Technical Details
-- **Supported Minecraft versions:** 1.21.6–1.21.11
+- **Supported Minecraft versions:** 1.21.11
 
 ---
 

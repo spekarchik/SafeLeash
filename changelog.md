@@ -6,7 +6,7 @@
 
 ## 📦 Version 1.0.0
 
-- Now supports Minecraft 26.1.1
+- Now supports Minecraft 1.21.11
 
 - Initial release
 - When a leashed mob takes drowning damage:
