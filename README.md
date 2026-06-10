@@ -4,7 +4,7 @@ Leashed mobs can be vulnerable in ways many players don’t expect.
 If a mob is pulled underwater — by a boat, a player, another mob, or currents — it can drown while still tethered.  
 Mobs that are untied naturally float to the surface, but leashed mobs remain at risk.
 
-*Safe Leash* is a lightweight NeoForge mod for Minecraft 1.21.6+ that makes leash behavior safer and more predictable.
+*Safe Leash* is a lightweight mod for Minecraft 1.21.6+ that makes leash behavior safer and more predictable.
 
 ---
 
