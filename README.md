@@ -18,7 +18,7 @@ Mobs that are untied naturally float to the surface, but leashed mobs remain at 
 
 ## ✅ Features
 
-- 🧠 **NeoForge-friendly** – designed for Minecraft 1.21.6+  
+- 🧠 **NeoForge & Fabric support** – designed for Minecraft 1.21.6+  
 - 🎮 **Client/server compatible** – works in singleplayer and multiplayer  
 - 🔗 **Improved leash mechanics** – prevents accidental mob drowning, regardless of what pulls the mob underwater  
 - 🎨 **Lightweight & focused** – solves leash-related risks without unnecessary changes  
@@ -28,13 +28,15 @@ Mobs that are untied naturally float to the surface, but leashed mobs remain at 
 # 🛠️ Installation and Technical Information
 
 ## Installation
-- Make sure you have **Minecraft 1.21.6 - 1.21.11** with **NeoForge** installed.
+- Make sure you have one of the supported **Minecraft** versions with **NeoForge** or **Fabric** installed.
+- **Fabric** version requires **Fabric API** to be installed as well.
 - Download the mod `.jar` file.
 - Place it into your `mods` folder.
 - Launch the game and enjoy your adventure!
 
 ## Technical Details
 - **Supported Minecraft versions:** 1.21.6+
+- **Supported loaders:** NeoForge, Fabric
 
 ---
 
