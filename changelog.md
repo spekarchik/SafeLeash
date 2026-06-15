@@ -1,3 +1,9 @@
+## 📦 Version 1.0.2
+
+### 📝 Improvements
+- Lowered the minimum required Fabric Loader version.
+
+
 ## 📦 Version 1.0.1
 
 - Changed the Home page URL in the mod metadata.
