@@ -1,5 +1,7 @@
 ## 📦 Version 1.0.1
 
+- Now supports Minecraft 26.2
+
 - Changed the Home page URL in the mod metadata.
 - No gameplay changes.
 
