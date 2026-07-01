@@ -1,3 +1,8 @@
+## 📦 Version 1.0.3
+
+- Promoted to **Release**.
+
+
 ## 📦 Version 1.0.2
 
 ### 📝 Improvements
