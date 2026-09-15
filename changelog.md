@@ -1,5 +1,10 @@
 ## 📦 Version 1.0.3
 
+- Now supports Minecraft 26.3
+
+
+## 📦 Version 1.0.3
+
 - Corrected the minimum required *Fabric Loader* version.
 - Promoted to **Release**.
 
